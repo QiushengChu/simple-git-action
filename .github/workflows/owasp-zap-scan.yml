@@ -12,6 +12,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
+        continue-on-error: true
       - name: PostCheckout
         run: echo "posting checking out"
       - name: ZAP Scan
