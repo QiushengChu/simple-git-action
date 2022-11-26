@@ -6,10 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the web pplication
     steps:
+      - name: Staring job execution
+        run: echo "starting the job execution"
       - name: Checkout
         uses: actions/checkout@v2
         with:
           ref: master
+      - name: PostCheckout
+        run: echo "posting checking out"
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.4.0
         with:
