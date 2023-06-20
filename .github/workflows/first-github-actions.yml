@@ -1,8 +1,0 @@
-name: Run Shell Commands
-on: [push, fork]
-jobs:
-  run-shell-command: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo a string
-        run: echo "hello seuciryt gurus. This is my first git action in my life"
